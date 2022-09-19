@@ -1,12 +1,15 @@
 import dynamic from 'next/dynamic';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Layout from '../components/Layout';
 
 import { getImages } from '../lib/firebase';
 
-const ResponsiveGallery = dynamic(() => import('react-responsive-gallery'), {
-  ssr: false,
-});
+const ResponsiveGallery = dynamic(
+  async () => await import('react-responsive-gallery'),
+  {
+    ssr: false,
+  }
+);
 
 export async function getStaticProps() {
   const docs = await getImages();
