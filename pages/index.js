@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
-import Image from 'next/image';
+import About from '../components/About';
+import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 
 export default function Home() {
@@ -10,7 +12,8 @@ export default function Home() {
         <meta name='description' content='Home page of my personal portfolio' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main> test cica</main>
+      <Hero />
+      <About />
     </Layout>
   );
 }

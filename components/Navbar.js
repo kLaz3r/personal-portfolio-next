@@ -56,6 +56,23 @@ const NavBar = styled.nav`
       aspect-ratio: 670/289;
     }
   }
+  @media screen and (max-width: 700px) {
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    min-height: 8rem;
+    justify-content: space-evenly;
+    align-items: center;
+    ul {
+      margin-right: 0;
+      display: block;
+      li {
+        display: block;
+      }
+    }
+    .logo-link {
+      margin-left: 0;
+    }
+  }
 `;
 
 const Navbar = () => {
@@ -72,12 +89,6 @@ const Navbar = () => {
         </li>
         <li>
           <Link href='/projects'>Projects</Link>
-        </li>
-        <li>
-          <Link href='/about'>About</Link>
-        </li>
-        <li>
-          <Link href='/contact'>Contact</Link>
         </li>
       </ul>
     </NavBar>
