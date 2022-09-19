@@ -5,7 +5,10 @@ import Layout from '../components/Layout';
 import { getImages } from '../lib/firebase';
 
 const ResponsiveGallery = dynamic(
-  async () => await import('react-responsive-gallery'),
+  () =>
+    import('react-responsive-gallery').then(
+      (module) => module.ResponsiveGallery
+    ),
   {
     ssr: false,
   }
