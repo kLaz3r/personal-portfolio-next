@@ -4,15 +4,9 @@ import Layout from '../components/Layout';
 
 import { getImages } from '../lib/firebase';
 
-const ResponsiveGallery = dynamic(
-  () =>
-    import('react-responsive-gallery').then(
-      (module) => module.ResponsiveGallery
-    ),
-  {
-    ssr: false,
-  }
-);
+const ResponsiveGallery = dynamic(() => import('../components/Gallery'), {
+  ssr: false,
+});
 
 export async function getStaticProps() {
   const docs = await getImages();
