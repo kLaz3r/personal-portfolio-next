@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
@@ -86,6 +87,9 @@ const ProjectsWrapper = styled.div`
 const Projects = ({ projects }) => {
   return (
     <Layout>
+      <Head>
+        <title>Stefan Nasturas | Projects</title>
+      </Head>
       <ProjectsWrapper>
         <div className='GridContainer'>
           {projects &&

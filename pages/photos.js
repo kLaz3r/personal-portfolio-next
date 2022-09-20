@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import React from 'react';
 import Layout from '../components/Layout';
 
@@ -38,6 +39,9 @@ const Photos = ({ imagesArr }) => {
   // }, []);
   return (
     <Layout>
+      <Head>
+        <title>Stefan Nasturas | Photos</title>
+      </Head>
       {typeof window !== 'undefined' && (
         <ResponsiveGallery
           images={imagesArr}

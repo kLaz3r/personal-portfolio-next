@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import AdminAuthForm from '../components/AdminAuthForm';
@@ -254,6 +255,9 @@ const Admin = () => {
   }
   return (
     <Layout>
+      <Head>
+        <title>ADMIN PANEL</title>
+      </Head>
       <AdminWrapper>
         <h3>Admin Panel</h3>
         {display}
