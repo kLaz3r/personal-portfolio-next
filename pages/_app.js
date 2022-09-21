@@ -1,11 +1,8 @@
-import Aos from 'aos';
+// import Aos from 'aos';
 import Head from 'next/head';
 import Script from 'next/script';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
-// const Aos = dynamic(() => import('aos'), {
-//   ssr: true,
-// });
 
 const theme = {
   dark: '#303841',
@@ -16,18 +13,18 @@ const theme = {
 };
 
 function MyApp({ Component, pageProps }) {
-  typeof window !== 'undefined' && Aos.init();
+  // typeof window !== 'undefined' && Aos.init();
   return (
     <>
       <Head>
         <title>Title of the project</title>
       </Head>
       <ThemeProvider theme={theme}>
+        <GlobalStyles></GlobalStyles>
         <Script
           src='https://kit.fontawesome.com/865bc47756.js'
           crossorigin='anonymous'
         ></Script>
-        <GlobalStyles />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
