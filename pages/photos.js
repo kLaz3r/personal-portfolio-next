@@ -9,7 +9,7 @@ const ResponsiveGallery = dynamic(() => import('../components/Gallery'), {
   ssr: false,
 });
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const docs = await getImages();
   const images = docs.map((doc) => {
     return {
