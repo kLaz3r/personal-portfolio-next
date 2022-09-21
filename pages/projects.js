@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import { getProjects } from '../lib/firebase';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const docs = await getProjects();
   const projects = docs.map((doc) => {
     return {
