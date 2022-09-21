@@ -236,9 +236,9 @@ const Hero = () => {
             <br /> Don&apos;t hesitate to contact me using the button below!
           </p>
           <div className='social'>
-            <a href='https://www.instagram.com/_kingof_darkness_/'>
+            {/* <a href='https://www.instagram.com/_kingof_darkness_/'>
               <i className='fab fa-instagram fa-2x'></i>
-            </a>
+            </a> */}
             <a href='https://github.com/kLaz3r'>
               <i className='fab fa-github fa-2x'></i>
             </a>
