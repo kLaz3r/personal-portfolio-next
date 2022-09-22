@@ -29,10 +29,10 @@ const ProjectsWrapper = styled.div`
     display: grid;
     padding: 2rem 2rem;
     gap: 2rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     .Project {
       border-radius: 10px;
-      height: 20rem;
+      height: 25rem;
       position: relative;
       &:hover .overlay {
         opacity: 1;
@@ -98,6 +98,7 @@ const Projects = ({ projects }) => {
                 <div
                   key={item.name}
                   className='Project'
+                  data-aos='fade'
                   style={{
                     background: `url("${item.img}") center center/cover`,
                   }}
