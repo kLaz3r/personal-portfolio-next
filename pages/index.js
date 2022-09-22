@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Stefan Nasturas | Home</title>
+        <title>Home | Stefan Nasturas Web Dev</title>
         <meta name='description' content='Home page of my personal portfolio' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

@@ -48,6 +48,7 @@ const NavBar = styled.nav`
     justify-content: center;
     margin-left: 3rem;
     height: 5rem;
+    width: 7rem;
 
     img {
       width: auto;
@@ -67,6 +68,7 @@ const NavBar = styled.nav`
       display: block;
       li {
         display: block;
+        padding: 0.5rem 0;
       }
     }
     .logo-link {
@@ -80,7 +82,12 @@ const Navbar = () => {
     <NavBar>
       <Link exact href='/'>
         <a className='logo-link'>
-          <Image src='/logo/logog.png' width='135px' height='50px' alt='logo' />
+          <Image
+            src='/logo/logog.png'
+            width='384px'
+            height='166px'
+            alt='logo'
+          />
         </a>
       </Link>
       <ul>

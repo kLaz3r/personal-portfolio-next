@@ -256,7 +256,7 @@ const Admin = () => {
   return (
     <Layout>
       <Head>
-        <title>ADMIN PANEL</title>
+        <title>Admin | Stefan Nasturas Web Dev</title>
       </Head>
       <AdminWrapper>
         <h3>Admin Panel</h3>

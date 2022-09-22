@@ -239,27 +239,39 @@ const Hero = () => {
             {/* <a href='https://www.instagram.com/_kingof_darkness_/'>
               <i className='fab fa-instagram fa-2x'></i>
             </a> */}
-            <a href='https://github.com/kLaz3r'>
+            <a aria-label='github' href='https://github.com/kLaz3r'>
               <i className='fab fa-github fa-2x'></i>
             </a>
-            <a href='https://discord.com/users/240478370620506112'>
+            <a
+              aria-label='discord'
+              href='https://discord.com/users/240478370620506112'
+            >
               <i className='fab fa-discord fa-2x'></i>
             </a>
-            <a href='https://www.reddit.com/user/kLaz3r'>
+            <a aria-label='reddit' href='https://www.reddit.com/user/kLaz3r'>
               <i className='fab fa-reddit fa-2x'></i>
             </a>
-            <a href='https://www.facebook.com/stefannasturas'>
+            <a
+              aria-label='facebook'
+              href='https://www.facebook.com/stefannasturas'
+            >
               <i className='fab fa-facebook fa-2x'></i>
             </a>
-            <a href='https://www.linkedin.com/in/stefan-nasturas-9bb019207/'>
+            <a
+              aria-label='linkedin'
+              href='https://www.linkedin.com/in/stefan-nasturas-9bb019207/'
+            >
               <i className='fab fa-linkedin fa-2x'></i>
             </a>
-            <a href='https://www.fiverr.com/klaz3r'>
+            <a aria-label='fiverr' href='https://www.fiverr.com/klaz3r'>
               <i className='fas fa-briefcase fa-2x'></i>
             </a>
           </div>
           <div className='contact'>
-            <a href='mailto:nasturasstefan@outlook.com'>
+            <a
+              aria-label='contact email'
+              href='mailto:nasturasstefan@outlook.com'
+            >
               <p>Contact</p>
               <i className='fas fa-briefcase'></i>
             </a>

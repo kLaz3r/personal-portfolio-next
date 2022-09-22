@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Title of the project</title>
+        <title>Home | Stefan Nasturas Web Dev</title>
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyles></GlobalStyles>

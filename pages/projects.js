@@ -88,7 +88,7 @@ const Projects = ({ projects }) => {
   return (
     <Layout>
       <Head>
-        <title>Stefan Nasturas | Projects</title>
+        <title>Projects | Stefan Nasturas Web Dev</title>
       </Head>
       <ProjectsWrapper>
         <div className='GridContainer'>

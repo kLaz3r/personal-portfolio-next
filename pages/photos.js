@@ -40,7 +40,7 @@ const Photos = ({ imagesArr }) => {
   return (
     <Layout>
       <Head>
-        <title>Stefan Nasturas | Photos</title>
+        <title>Photos | Stefan Nasturas Web Dev</title>
       </Head>
       {typeof window !== 'undefined' && (
         <ResponsiveGallery

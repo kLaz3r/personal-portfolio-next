@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
@@ -34,7 +35,7 @@ const AboutWrapper = styled.div`
       background: rgba(0, 0, 0, 0.5);
       border-left: 4px solid ${(props) => props.theme.secondary};
       padding: 1rem;
-      h3 {
+      h1 {
         font-size: 2.5rem;
         text-align: start;
         a {
@@ -57,7 +58,7 @@ const AboutWrapper = styled.div`
         }
         .Certification {
           padding-bottom: 1rem;
-          h5 {
+          p {
             font-size: 1rem;
             padding-bottom: 0.5rem;
           }
@@ -99,7 +100,7 @@ const AboutWrapper = styled.div`
         height: 100%;
         border-radius: 0;
         border-left: 0;
-        h3 {
+        h1 {
           font-size: 1.5rem;
         }
         .Certifications {
@@ -123,16 +124,21 @@ const About = () => {
     >
       <div className='flex-container'>
         <div data-aos='fade-right' className='Logo'>
-          <img src='/logo/logow.png' alt='logo' />
+          <Image
+            width='670px'
+            height='289px'
+            src='/logo/logow.png'
+            alt='logo'
+          />
         </div>
         <div data-aos='fade-left' className='Heading'>
-          <h3>
+          <h1>
             Hello! My name is{' '}
             <span>
               <Link href='/admin'>Stefan</Link>
             </span>
             , I&apos;m a beginner front end dev from Romania.
-          </h3>
+          </h1>
           <p>I like designing websites and branding for clients.</p>
           <p>
             My key strengths are visual & interaction design, and also
@@ -146,14 +152,14 @@ const About = () => {
           <div className='Certifications'>
             <h2>Certifications:</h2>
             <div className='Certification'>
-              <h5>JavaScript Algorithms and Data Structures</h5>
+              <p>JavaScript Algorithms and Data Structures</p>
               <span>freeCodeCamp</span>
               <a href='https://www.freecodecamp.org/certification/fcc9d52b9c9-b87a-495e-a687-fae1398226ef/javascript-algorithms-and-data-structures'>
                 Learn More | Credential
               </a>
             </div>
             <div className='Certification'>
-              <h5>Front End Development Libraries</h5>
+              <p>Front End Development Libraries</p>
               <span>freeCodeCamp</span>
               <a href='https://www.freecodecamp.org/certification/fcc9d52b9c9-b87a-495e-a687-fae1398226ef/front-end-development-libraries'>
                 Learn More | Credential
