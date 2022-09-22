@@ -1,5 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Head from 'next/head';
 import Script from 'next/script';
 import { ThemeProvider } from 'styled-components';
@@ -14,7 +12,6 @@ const theme = {
 };
 
 function MyApp({ Component, pageProps }) {
-  typeof window !== 'undefined' && AOS.init();
   return (
     <>
       <Head>
