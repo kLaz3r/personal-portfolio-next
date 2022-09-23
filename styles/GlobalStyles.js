@@ -5,12 +5,12 @@ const GlobalStyles = createGlobalStyle`
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
 }
 body {
   background: ${(props) => props.theme.dark};
   color: ${(props) => props.theme.light};
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   overflow: auto;
   overflow-x: hidden;
 }
