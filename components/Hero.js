@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/future/image';
 import React from 'react';
 import styled from 'styled-components';
+import portraitNext from '../public/images/portrait-next.png';
 
 const HeroWrapper = styled.div`
   .hero-container {
@@ -90,6 +92,7 @@ const HeroWrapper = styled.div`
         left: 0;
         border-radius: 20px;
         width: 50%;
+        height: auto;
         &.stefan {
           transform: translateY(-50%) translateX(50%);
           z-index: 2;
@@ -97,7 +100,7 @@ const HeroWrapper = styled.div`
         }
         &.blob {
           z-index: 0;
-          transform: translateY(-49%) translateX(50%) scale(150%);
+          transform: translateY(-25%) translateX(50%) scale(300%);
         }
       }
     }
@@ -174,7 +177,6 @@ const HeroWrapper = styled.div`
           top: 0;
           left: 0;
           border-radius: 20px;
-          width: 50%;
           &.stefan {
             transform: translateY(0%) translateX(50%);
             z-index: 2;
@@ -278,8 +280,11 @@ const Hero = () => {
           </div>
         </div>
         <div data-aos='fade-left' className='portrait'>
-          <img className='blob' src='/images/blob.svg' alt='' />
-          <img className='stefan' src='/images/portrait.png' alt='' />
+          {/* <img className='blob' src='/images/blob.svg' alt='' />
+          <img className='stefan' src='/images/portrait.png' alt='' /> */}
+          {/* <Image className='stefan' src={portrait} alt='stefan'></Image>
+          <Image className='blob' src={blob} alt='blob'></Image> */}
+          <Image className='stefan' src={portraitNext} alt='portrait'></Image>
         </div>
       </div>
       <div className='testimonials'>

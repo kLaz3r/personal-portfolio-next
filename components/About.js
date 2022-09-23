@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
+import logow from '../public/logo/logow.png';
 
 const AboutWrapper = styled.div`
   padding-top: 3rem;
@@ -124,12 +125,7 @@ const About = () => {
     >
       <div className='flex-container'>
         <div data-aos='fade-right' className='Logo'>
-          <Image
-            width='670px'
-            height='289px'
-            src='/logo/logow.png'
-            alt='logo'
-          />
+          <Image src={logow} alt='logo' placeholder='blur' />
         </div>
         <div data-aos='fade-left' className='Heading'>
           <h1>

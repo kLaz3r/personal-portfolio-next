@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
+import logo from '../public/logo/logog.png';
 
 const NavBar = styled.nav`
   border-bottom: 2px solid ${(props) => props.theme.secondary};
@@ -82,12 +83,7 @@ const Navbar = () => {
     <NavBar>
       <Link exact href='/'>
         <a className='logo-link'>
-          <Image
-            src='/logo/logog.png'
-            width='384px'
-            height='166px'
-            alt='logo'
-          />
+          <Image src={logo} alt='logo' placeholder='blur' />
         </a>
       </Link>
       <ul>
