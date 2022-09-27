@@ -94,9 +94,28 @@ const HeroWrapper = styled.div`
         width: 50%;
         height: auto;
         &.stefan {
+          @keyframes floaty {
+            0.0% {
+            }
+            10.0% {
+            }
+            100% {
+              transform: translate(50%, -50%) rotate(0deg);
+            }
+            24.9% {
+              transform: translate(50%, -45%);
+            }
+            49.9% {
+              transform: translate(50%, -47%) rotate(0deg);
+            }
+            75.0% {
+              transform: translate(50%, -49%) rotate(0deg);
+            }
+          }
           transform: translateY(-50%) translateX(50%);
           z-index: 2;
           border-radius: 7rem;
+          animation: floaty 10s ease 0s infinite normal none;
         }
         &.blob {
           z-index: 0;
@@ -181,6 +200,25 @@ const HeroWrapper = styled.div`
             transform: translateY(0%) translateX(50%);
             z-index: 2;
             border-radius: 7rem;
+            @keyframes floatyM {
+              0.0% {
+              }
+              10.0% {
+              }
+              100% {
+                transform: translate(50%, 0%) rotate(0deg);
+              }
+              24.9% {
+                transform: translate(50%, -5%);
+              }
+              49.9% {
+                transform: translate(50%, -3%) rotate(0deg);
+              }
+              75.0% {
+                transform: translate(50%, -1%) rotate(0deg);
+              }
+            }
+            animation: floatyM 10s ease 0s infinite normal none;
           }
           &.blob {
             z-index: 0;

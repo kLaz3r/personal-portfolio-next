@@ -22,7 +22,11 @@ export default function Document() {
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='apple-touch-icon' href='/apple-icon.png'></link>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='true'
+        />
         <link
           href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap'
           rel='stylesheet'
