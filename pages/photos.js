@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import Image from 'next/image';
 import React from 'react';
 import Layout from '../components/Layout';
 
@@ -20,6 +21,7 @@ export async function getStaticProps() {
     props: {
       imagesArr: images,
     },
+    revalidate: 3600,
   };
 }
 
