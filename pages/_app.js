@@ -1,4 +1,4 @@
-import { getAnalytics } from 'firebase/analytics';
+import { getAnalytics, logEvent } from 'firebase/analytics';
 import Head from 'next/head';
 import Script from 'next/script';
 import { useEffect } from 'react';
@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const analytics = getAnalytics(app);
+      logEvent(analytics, 'user', {});
       console.log(analytics);
     }
   }, []);
