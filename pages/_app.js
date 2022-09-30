@@ -1,6 +1,9 @@
+import { getAnalytics } from 'firebase/analytics';
 import Head from 'next/head';
 import Script from 'next/script';
+import { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
+import { app } from '../lib/firebase';
 import GlobalStyles from '../styles/GlobalStyles';
 
 const theme = {
@@ -12,6 +15,12 @@ const theme = {
 };
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const analytics = getAnalytics(app);
+      console.log(analytics);
+    }
+  }, []);
   return (
     <>
       <Head>
